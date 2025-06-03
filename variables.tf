@@ -33,6 +33,6 @@ variable "vpc_name" {
 
 variable "vms_ssh_root_key" {
   type        = string
-  default     = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIAMhX97XTMEk0+fKEjegV71O18DUyTbQoiPIudez/Tj9 kos@kos-VirtualBox"
+  default     = "ssh-ed25519 AAAAC3N.......... maxp@max-VirtualBox"
   description = "ssh-keygen -t ed25519"
 }

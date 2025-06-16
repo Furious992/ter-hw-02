@@ -1,13 +1,13 @@
 variable "vm_web_name" {
   type        = string
   default     = "netology-develop-platform-web"
-  description = "Name of the VM"
+  description = "instance name"
 }
 
 variable "vm_web_platform_id" {
   type        = string
   default     = "standard-v1"
-  description = "Platform ID for the VM"
+  description = "Platform ID"
 }
 
 variable "vm_web_zone" {
@@ -19,19 +19,19 @@ variable "vm_web_zone" {
 variable "vm_web_core_fraction" {
   type        = number
   default     = 5
-  description = "Core fraction for the VM"
+  description = "core fraction"
 }
 
 variable "vm_web_cores" {
   type        = number
   default     = 2
-  description = "Number of cores for the VM"
+  description = "vCPU numbers"
 }
 
 variable "vm_web_memory" {
   type        = number
   default     = 1
-  description = "Memory size (in GB) for the VM"
+  description = "VM memory, GB"
 }
 
 variable "vm_web_image_id" {
@@ -53,14 +53,14 @@ variable "vm_web_nat" {
 }
 
 variable "vm_web_serial_port_enable" {
-  type        = string
+  type        = string 
   default     = "1"
   description = "Enable serial port for the VM"
 }
 
 variable "vm_web_ssh_keys" {
   type        = string
-  default     = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICMLupjJ1DJ6oImS9OyvFFNenNk8/hiRrzkWIZ171DFa root@debian12-2"
+  default     = "ubuntu:ssh-ed25519 AAAAC3Nz maxp@maxsrv"
   description = "SSH keys for the VM"
 }
 
@@ -70,29 +70,28 @@ variable "vm_web_preemptible" {
   description = "Enable preemptible flag for the VM"
 }
 
-# Переменные для второй ВМ
 variable "vm_db_name" {
   type        = string
   default     = "netology-develop-platform-db"
-  description = "Name of the VM"
+  description = "instance name"
 }
 
 variable "vm_db_platform_id" {
   type        = string
   default     = "standard-v1"
-  description = "Platform ID for the VM"
+  description = "Platform ID"
 }
 
 variable "vm_db_zone" {
   type        = string
   default     = "ru-central1-a"
-  description = "Zone where the VM will be created"
+  description = "Zone"
 }
 
 variable "vm_db_core_fraction" {
   type        = number
   default     = 20
-  description = "Core fraction for the VM"
+  description = "core fraction"
 }
 
 variable "vm_db_cores" {
@@ -104,7 +103,7 @@ variable "vm_db_cores" {
 variable "vm_db_memory" {
   type        = number
   default     = 2
-  description = "Memory size (in GB) for the VM"
+  description = "VM memory, GB"
 }
 
 variable "vm_db_image_id" {
@@ -133,7 +132,7 @@ variable "vm_db_serial_port_enable" {
 
 variable "vm_db_ssh_keys" {
   type        = string
-  default     = "ubuntu:ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICMLupjJ1DJ6oImS9OyvFFNenNk8/hiRrzkWIZ171DFa root@debian12-2"
+  default     = "ubuntu:ssh-ed25519 AAAAC3Nz maxp@maxsrv"
   description = "SSH keys for the VM"
 }
 

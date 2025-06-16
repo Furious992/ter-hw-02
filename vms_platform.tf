@@ -13,7 +13,7 @@ variable "vm_web_platform_id" {
 variable "vm_web_zone" {
   type        = string
   default     = "ru-central1-a"
-  description = "Zone where the VM will be created"
+  description = "Zone"
 }
 
 variable "vm_web_core_fraction" {
@@ -37,7 +37,7 @@ variable "vm_web_memory" {
 variable "vm_web_image_id" {
   type        = string
   default     = "fd8t24r7o6m7fdvlp47l"
-  description = "Image ID for the boot disk"
+  description = "Image ID"
 }
 
 variable "vm_web_disk_type" {
@@ -109,7 +109,7 @@ variable "vm_db_memory" {
 variable "vm_db_image_id" {
   type        = string
   default     = "fd8t24r7o6m7fdvlp47l"
-  description = "Image ID for the boot disk"
+  description = "Image ID"
 }
 
 variable "vm_db_disk_type" {

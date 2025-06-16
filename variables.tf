@@ -53,11 +53,11 @@ variable "vms_resources" {
   }
 }
 
-variable "vms_metadata" {
+variable "common_metadata" {
+  description = "Metadata for all vms"
   type = map(string)
   default = {
     "serial-port-enable" = "1"
     "ssh-keys"           = "ubuntu:ssh-ed25519 AAAAC3Nz maxp@maxpsrv"
   }
-  description = "Metadata for VMs"
 }
